@@ -13,10 +13,12 @@ if( DEBUG ){
 
 
 //加载公用函数库
-include_once CORE.'common'.DIRECTORY_SEPARATOR.'functions.php';
+include CORE.'common'.DIRECTORY_SEPARATOR.'functions.php';
 
 //加载核心类
-include_once CORE.'core.php';
+include CORE.'application.php';
+
+spl_autoload_register('core\application::load');
 
 //启动核心类
-core\core::run();
+core\application::run();
