@@ -1,16 +1,24 @@
 <?php
 namespace core;
 
-class application
+class Application
 {
 
 	static $classMap = array();
 
 	static public function run()
 	{
+		//加载配置
+		new Config(CORE.'configs'.DIRECTORY_SEPARATOR);
+		//加载路由
 		new route();
 	}
 
+	/**
+	 * 自动加载类
+	 * @param type $class 
+	 * @return type
+	 */
 	static public function load($class)
 	{
 		if(isset(self::$classMap[$class])){

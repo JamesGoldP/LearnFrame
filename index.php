@@ -19,6 +19,5 @@ include CORE.'common'.DIRECTORY_SEPARATOR.'functions.php';
 include CORE.'application.php';
 
 spl_autoload_register('core\application::load');
-
 //启动核心类
 core\application::run();
