@@ -11,7 +11,7 @@ if( DEBUG ){
 	ini_set('display_error', 'Off');
 }
 
-
+date_default_timezone_set('Asia/shanghai');
 //加载公用函数库
 include CORE.'common'.DIRECTORY_SEPARATOR.'functions.php';
 

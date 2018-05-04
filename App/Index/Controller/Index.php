@@ -6,7 +6,7 @@ class Index
 
 	public function index()
 	{
-		echo __CLASS__;
+		\core\Log::write('Hello World');	
 	}
 
 }

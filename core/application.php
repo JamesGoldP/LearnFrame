@@ -10,8 +10,12 @@ class Application
 	{
 		//加载配置
 		new Config(CORE.'configs'.DIRECTORY_SEPARATOR);
+		
+		//加载日志
+		new Log();
+
 		//加载路由
-		new route();
+		new Route();
 	}
 
 	/**
