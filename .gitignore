@@ -1,1 +1,4 @@
 runtime
+vendor
+composer.*
+composer-setup.php
